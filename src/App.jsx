@@ -12,7 +12,8 @@ import Footer from './Component/Footer';
 
 const App =()=>{
   return(
-    <div className='h-[calc(100vh-7rem)] max-w-4xl mx-auto px-10 py-16'>
+    //  original ht value h-[calc(100vh-7rem)]
+    <div className='h-[calc(100vh-6rem)] max-w-5xl mx-auto px-12 pt-2  '>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>}/>
