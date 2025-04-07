@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.project-grid > div:nth-child(odd) {
+/* .project-grid > div:nth-child(odd) {
   @apply hover:bg-red-500 text-white;
 }
 .project-grid > div:nth-child(even) {
   @apply hover:bg-blue-500 text-white;
 }
+ */
+body {
+  @apply transition-colors duration-300;
+} 
 
+.project-grid.dark > div:nth-child(odd) {
+  @apply hover:bg-red-500 text-white;
+}
+.project-grid.dark > div:nth-child(even) {
+  @apply hover:bg-blue-500 text-white;
+}
 
+.project-grid.light > div:nth-child(odd) {
+  @apply hover:bg-blue-500 text-black;
+}
+.project-grid.light > div:nth-child(even) {
+  @apply hover:bg-red-500 text-black;
+}
 
 * {
   box-sizing: border-box;
@@ -22,6 +38,18 @@ html,body{
   /* background: black; */
   background: #1E201E;
   color: white;
+}
+
+.dark {
+  color: #E5E5E5;
+  background: #1A1A1A;
+  /* font:2xl */
+}
+
+.light {
+  color: #1A1A1A;
+  background: #E5E5E5;
+  
 }
 
 
