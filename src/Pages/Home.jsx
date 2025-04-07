@@ -54,7 +54,7 @@ const Home = () => {
           <img className="w-8" src="src/assets/rocket.svg" />
         </h1>
         {/* project div component code from here  */}
-        <div className="project-grid grid grid-cols-2 gap-3 ">
+        <div className="{`project-grid ${themeMode} grid grid-cols-2 gap-3`}grid grid-cols-2 gap-3">
           {[...projects].map((project, index) => (
             <Project key={index} project={project} />
           ))}
